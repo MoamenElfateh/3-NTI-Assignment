@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --cardColor: #fffcde;
+}
+.w-100 {
+  width: 100%;
+}
+.w-90 {
+  width: 90%;
+}
+.h-100vh {
+  height: 100vh;
+}
+.h-max-content {
+  height: max-content;
+}
+.m-bottom-2 {
+  margin-bottom: 2%;
+}
+.p-top-3 {
+  padding-top: 3%;
+}
+.p-bottom-10 {
+  padding-bottom: 10%;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-d-column {
+  flex-direction: column;
+}
+.just-content-center {
+  justify-content: center;
+}
+.just-content-between {
+  justify-content: space-between;
+}
+.just-content-evenly {
+  justify-content: space-evenly;
+}
+.text-align-center {
+  text-align: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.card {
+  cursor: grab;
+  width: 20rem;
+}
+.card-image {
+  transition: all 0.5s;
+}
+.card-info {
+  display: none;
+  transition: display 0.5s;
+}
+.card-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card-info h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.card:hover {
+  background-color: var(--cardColor);
+}
+.card:hover .card-image {
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  width: 60%;
+  height: 15rem;
+}
+.card:hover .card-info {
+  display: block;
+  width: 52%;
+}
